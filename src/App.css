@@ -1,0 +1,58 @@
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1F2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4B5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7280;
+}
+
+/* Code editor styles */
+.cm-editor {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Drag and drop styles */
+.drag-preview {
+  opacity: 0.8;
+  transform: rotate(5deg);
+}
+
+.drop-zone {
+  border: 2px dashed #3B82F6;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.drop-zone-active {
+  border-color: #10B981;
+  background-color: rgba(16, 185, 129, 0.1);
+}
